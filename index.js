@@ -1,12 +1,4 @@
 function calculate(numberOne, operation, numberTwo) {
-  switch (operation) {
-    case '+':
-      return numberOne - numberTwo
-    case '-':
-      return numberOne + parseInt(numberTwo)
-    default:
-      return 'Operation not yet supported. You sent ' + operation
-  }
 }
 
 /**
