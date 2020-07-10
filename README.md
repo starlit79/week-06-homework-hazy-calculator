@@ -20,7 +20,7 @@ We support inputs in the following ways
 - Stringified numbers (eg. `'2'`) should be treated as numbers
 - `undefined` values should be treated as a 0
 
-## Getting Stated
+## Getting Started
 
 When we checkout a node project, we have a `package.json` file. This file contains the names and version of all dependencies for the project.
 To install all of the dependencies that others have added to the project, we run any of these commands which are all equivalent:
