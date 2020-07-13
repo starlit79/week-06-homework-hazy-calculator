@@ -1,7 +1,7 @@
 function calculate(numberOne, operant, numberTwo) {
   let numberOneInt = parseInt(numberOne)
   let numberTwoInt = parseInt(numberTwo)
-  let result = 0;
+  
   if (numberOne === undefined) {
      numberOneInt = 0;
   }
@@ -11,23 +11,23 @@ function calculate(numberOne, operant, numberTwo) {
 
     switch (operant) {
       case "*":
-        result = numberOneInt * numberTwoInt;
+        return numberOneInt * numberTwoInt;
         break;
 
       case "/":
-        result = numberOneInt / numberTwoInt;
+        return numberOneInt / numberTwoInt;
         break;
 
       case "+":
-        result = numberOneInt + numberTwoInt;
+        return numberOneInt + numberTwoInt;
         break;
 
       case "-":
-        result = numberOneInt - numberTwoInt;
+        return numberOneInt - numberTwoInt;
         break;
 
       default:
-        result = 0;
+        return 'We are currently not supporting this ' + operant
         break;
     }
   return result
@@ -39,7 +39,7 @@ function calculate(numberOne, operant, numberTwo) {
  One property is `calculate`. The value will be the calculate function.
  The other property is `features` which contains a string value with a description.
  */
-console.log(calculate("4", "+", "a"))
+console.log(calculate("4", "&", "5"))
 module.exports = {
   calculate,
   features: 'Add, Subtract, division, multiplication.'
